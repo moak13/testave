@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\MailConfig;
 
 class Mailer
 {
 	private $mail;
-	protected $sender_email = "";
-	protected $sender_password = "";
-	protected $sender_display_name = "";
-	protected $sender_display_email = "";
-	protected $sender_reply_to_name = "";
-	protected $sender_reply_to_email = "";
+	protected $sender_email = "fstackdevinc.gmail.com";
+	protected $sender_password = "08521234";
+	protected $sender_display_name = "AVE - VOTING";
+	protected $sender_display_email = "no-reply@fstackdev.net";
+	protected $sender_reply_to_name = "AVE - VOTING";
+	protected $sender_reply_to_email = "cs@fstackdev.net";
 
 	public function __construct()
 	{

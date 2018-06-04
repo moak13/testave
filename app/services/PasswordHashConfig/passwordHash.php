@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\PasswordHash_config;
+namespace App\Service\PasswordHashConfig;
 
 class passwordHash {
 
