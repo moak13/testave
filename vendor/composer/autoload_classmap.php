@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Models\\Admin' => $baseDir . '/app/models/Admin.php',
+    'App\\Models\\Subscribers' => $baseDir . '/app/models/Subscribers.php',
     'App\\Models\\User' => $baseDir . '/app/models/User.php',
 );

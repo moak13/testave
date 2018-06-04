@@ -17,6 +17,9 @@ $app->post('/auth/user/signup', 'UserAuthController:postSignUp');
 $app->get('/auth/user/signin', 'UserAuthController:getSignIn')->setName('user_auth.signin');
 $app->post('/auth/user/signin', 'UserAuthController:postSignIn');
 
+//This is to handle signin out normal users
+$app->get('/auth/user/signout', 'UserAuthController:getSignOut')->setName('user_auth.signout');
+
 //This is to handle signin up admin users
 $app->get('/auth/admin/signup', 'AdminAuthController:getSignUp')->setName('admin_auth.signup');
 $app->post('/auth/admin/signup', 'AdminAuthController:postSignUp');

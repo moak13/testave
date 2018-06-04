@@ -35,6 +35,14 @@ $container['view'] = function ($container) {
 
    ));
 
+   $view->getEnvironment()->addGlobal('auth', [
+    //'check' -> $container->auth->check(),
+   // 'AuthUser' -> $container->auth->AuthUser(),
+   // 'AuthAdmin' -> $container->auth->AuthAdmin(),
+   ]);
+
+   $view->getEnvironment()->addGlobal('flash', $container->flash);
+
    return $view;
 
 };
@@ -43,16 +51,31 @@ $container['database'] = function($container) use ($capsule) {
   return $capsule;
 };
 
+$container['validator'] = function($container) {
+   return new \App\Validation\Validator;
+};
+
+$container['flash'] = function($container) {
+   return new \Slim\Flash\Messages;
+};
+
+$container['csrf'] = function($container) {
+   return new \Slim\Csrf\Guard;
+};
+
+$app->add($container->csrf);
+//$app->add(new \App\Middleware\ValidationErrorsMiddleware($container));
+
 $container['AuthAdmin'] = function($container) {
-  return new \App\Auth\AuthAdmin($container);
+  return new \App\Auth\AuthAdmin;
 };
 
 $container['AuthUser'] = function($container) {
-  return new \App\Auth\AuthUser($container);
+  return new \App\Auth\AuthUser;
 };
 
 $container['PasswordHash'] = function($container) {
-  return new \App\Services\PasswordHash_config\PasswordHash($container);
+  return new \App\Services\PasswordHash_config\PasswordHash;
 };
 
 $container['HomeController'] = function($container) {
