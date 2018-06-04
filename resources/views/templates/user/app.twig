@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>AVE - Voting System</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/user/app.css" >
+<link rel="stylesheet" href="{{ base_url() }}/css/user/animate.min.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/user/jquery.fancybox.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/user/flexslider.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/user/queries.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/user/etline-font.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/coming_soon/coming-soon.min.css">
+
+
+
+
+</head>
+
+<body>
+
+{% include 'templates/user/partials/nav.twig' %}
+
+<div class= "container">
+
+   {% block content %}{% endblock %}
+
+</div>
+
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ base_url() }}/js/coming_soon/jquery.vide.min.js"></script>
+<script type="text/javascript" src="{{ base_url() }}/js/coming_soon/coming-soon.min.js"></script>
+
+</body>
+
+</html>
