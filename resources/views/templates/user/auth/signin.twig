@@ -9,7 +9,7 @@
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="{{ pathFor('user_auth.signin') }}" method="POST">
+                        <form role="form" action="{{ path_for('user_auth.signin') }}" method="POST">
                         <input name="{{csrf.valueKey}}" type="hidden" value="{{csrf.value}}">
                         <input name="{{csrf.nameKey}}" type="hidden" value="{{csrf.name}}">
                             <fieldset>
