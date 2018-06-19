@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+
+RewriteRule ^contestant/([a-z]+)*$ ./contestant.php?cat=$1
+
+RewriteRule ^vote/([0-9]+)*$ ./process.php?cat=$1&cont=$1
+
+ErrorDocument 404 /404.shtml
