@@ -4,6 +4,7 @@ RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
  
+RewriteRule ^home/([a-z]+)*$ ./home.php?hme=$1
 
 RewriteRule ^contestant/([a-z]+)*$ ./contestant.php?cat=$1
 
