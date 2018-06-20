@@ -188,102 +188,67 @@ if(isset($_POST['logUser']) && isset($_POST['logPass'])) {
     <section id="intro" class="ripple">
         <div class="container-fluid">
             <div class="template-info" data-parallax='{"y": -300}'>
-                <a class="logo"><img src="assest/img/logo.png" alt=""></a>
+                <a class="logo"><img src="user/images/logo.png" alt=""></a>
                 <div class="page-headline">
                     <h1 class="white">Voting Engine</h1>
                     <h5 class="white">Just Inspiring more while we can </h5>
                 </div>
                 <a href="home.php" class="btn-primary page-scroll">Get Started</a>
             </div>
-            <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+			<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
 				<div class="form-wrap">
-					<?php
-						if(isset($_SESSION['messages'])) {
-							echo '<div class="'.$_SESSION['messageType'].' alert-dismissible">
-									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-										'.$_SESSION['messages'].'
-								</div>';
-						}
-					?>
-					<?php
-						if(isset($_SESSION['message'])) {
-							echo '<div class="'.$_SESSION['messageType'].' alert-dismissible">
-									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-								  '.$_SESSION['message'].'
-								</div>';
-						}
-					?>
-					<?php 
-						if(!isset($_SESSION['user_id'])){
-					?>
 					<div class="tab">
 						<ul class="tab-menu">
-							<li class="gtco-first"><a href="#" data-tab="signup">Sign up</a></li>
-							<li class="active gtco-second"><a href="#" data-tab="login">Login</a></li>
-								</ul>
-									<div class="tab-content">
-										
-										<div class="tab-content-inner" data-content="signup">
-											<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-												
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="user.email">Reg No</label>
-														<input type="text" class="form-control" name="regno">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit"  class="btn btn-primary" value="Sign up">
-													</div>
-												</div>
-											</form>	
-										</div>
-										
-										<div class="tab-content-inner active" data-content="login">
-											<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-															
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="username">Reg No</label>
-														<input type="text" class="form-control" name="logUser">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="password">Password</label>
-														<input type="password" class="form-control" name="logPass">
-													</div>
-												</div>
-
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Login">
-													</div>
-												</div>
-											</form>	
-											
-										</div>
-
-
-									</div>
-
-								</div>
-								<?php 
-									}else{
-								?>
+							<li class="gtco-first">
+								<a href="#" data-tab="signup">Sign Up</a>
+							</li>
+							<li class="active gtco-second">
+								<a href="#" data-tab="login">Log In</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-content-inner" data-content="signup">
+								<form action="#" method="post">
 									<div class="row form-group">
 										<div class="col-md-12">
-											<h2>We apologize for the inconvieniences in the CSE Voting. Please be assured of dedication to serving you. Thank you.</h2>
-											<a href="logout.php"><button type="button" class="btn btn-primary">Logout</button></a>
-											<a href="cat.php"><button type="button" class="btn btn-primary">Categories</button></a>
+											<label for="user.email">Reg No</label>
+											<input type="text" class="form-control" name="regno">
 										</div>
 									</div>
-								<?php 
-									}
-								?>
+									<div class="row form-group">
+										<div class="col-md-12">
+											<input type="submit"  class="btn btn-links" value="Sign up">
+										</div>
+									</div>
+								</form>
 							</div>
 						</div>
+						<div class="tab-content">
+							<div class="tab-content-inner active" data-content="login">
+								<form action="#" method="post">
+									<div class="row form-group">
+										<div class="col-md-12">
+											<label for="username">Reg No</label>
+											<input type="text" class="form-control" name="logUser" auto-complete="off">
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col-md-12">
+											<label for="password">Password</label>
+											<input type="password" class="form-control" name="logUser" auto-complete="off">
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col-md-12">
+											<input type="submit"  class="btn btn-links" value="Log In">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
     </section>
     <!--=== TOP AREA END ===-->

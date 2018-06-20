@@ -76,7 +76,7 @@
                         <li><a href="#feature">Become A Contestant</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#client">Client</a></li>
-                        <li><a href="#price">Pricing</a></li>
+                        <li><a href="#price">Store</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -266,7 +266,7 @@
             </div>
             div class="row text-white wow fadeInUp">
                 <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="big-button floatright">
+                    <a href="can.php" class="big-button floatright">
                         <span>Kindly</span>
                         <br>
                         <strong>Apply</strong>
@@ -545,15 +545,15 @@
         <div class="container">
             <div class="row wow fadeInUp">
                 <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
-                    <h3 class="text-uppercase">AFORTABLE PRICE</h3>
-                    <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit amet.</p>
+                    <h3 class="text-uppercase">AVE STORE</h3>
+                    <p>Get your college shirt at an affordable price. Best yet to nothing that we can garantee.</p>
                 </div>
             </div>
             <div class="space-60"></div>
             <div class="row">
                 <div class="col-xs-12 col-sm-4 wow fadeInLeft">
                     <div class="panel price-table text-center">
-                        <h3 class="text-uppercase price-title">Basic</h3>
+                        <h3 class="text-uppercase price-title">CAS</h3>
                         <hr>
                         <div class="space-30"></div>
                         <ul class="list-unstyled">
@@ -566,12 +566,12 @@
                         </ul>
                         <div class="space-30"></div>
                         <hr>
-                        <a href="#" class="btn btn-link text-uppercase">Purchase</a>
+                        <a href="store.php" class="btn btn-link text-uppercase">Purchase</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 wow flipInY">
                     <div class="panel price-table active center text-center">
-                        <h3 class="text-uppercase price-title">STABDARD</h3>
+                        <h3 class="text-uppercase price-title">CSE</h3>
                         <hr>
                         <div class="space-30"></div>
                         <ul class="list-unstyled">
@@ -584,12 +584,12 @@
                         </ul>
                         <div class="space-30"></div>
                         <hr>
-                        <a href="#" class="btn btn-link text-uppercase">Purchase</a>
+                        <a href="store.php" class="btn btn-link text-uppercase">Purchase</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 wow fadeInRight">
                     <div class="panel price-table text-center">
-                        <h3 class="text-uppercase price-title">UNLIMITED</h3>
+                        <h3 class="text-uppercase price-title">CBS</h3>
                         <hr>
                         <div class="space-30"></div>
                         <ul class="list-unstyled">
@@ -602,7 +602,7 @@
                         </ul>
                         <div class="space-30"></div>
                         <hr>
-                        <a href="#" class="btn btn-link text-uppercase">Purchase</a>
+                        <a href="store.php" class="btn btn-link text-uppercase">Purchase</a>
                     </div>
                 </div>
             </div>
