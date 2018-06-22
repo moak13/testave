@@ -121,7 +121,7 @@ if(isset($_POST['logUser']) && isset($_POST['logPass'])) {
 }
 ?>
 
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -137,7 +137,7 @@ if(isset($_POST['logUser']) && isset($_POST['logPass'])) {
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="user/css/bootstrap.min.css">
     <link rel="stylesheet" href="user/css/magnific-popup.css">
-    <link rel="stylesheet" href="user/css/icofonts.css">
+    <link rel="stylesheet" href="user/css/icofont.css">
     <link rel="stylesheet" href="user/css/font-awesome.min.css">
     <link rel="stylesheet" href="user/css/ionicons.min.css">
 	<link rel="stylesheet" href="user/css/animate.css">
@@ -145,12 +145,6 @@ if(isset($_POST['logUser']) && isset($_POST['logPass'])) {
 
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="user/css/demo.css">
-
-
-
-
-
-    <link rel="stylesheet" type="text/css" media="screen" href="user/css/style.css" />
 </head>
 <body>
     <!--=== PRELOADER ===-->
@@ -195,9 +189,10 @@ if(isset($_POST['logUser']) && isset($_POST['logPass'])) {
                 </div>
                 <a href="home.php" class="btn-primary page-scroll">Get Started</a>
             </div>
-			<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-				<div class="form-wrap">
-					<div class="tab">
+			<div class="col-md-3 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+				<div class="screens">
+					<h1>Waddup</h1>
+					<!--<div class="tab">
 						<ul class="tab-menu">
 							<li class="gtco-first">
 								<a href="#" data-tab="signup">Sign Up</a>
@@ -246,7 +241,7 @@ if(isset($_POST['logUser']) && isset($_POST['logPass'])) {
 								</form>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
         </div>

@@ -2,8 +2,8 @@
 
 define('DB_HOST', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'masterclass90');
-define('DB_DATABASE', 'cse');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'ave_voting');
 
 
 //replace the valid_email with a valid active gmail address

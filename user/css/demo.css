@@ -328,9 +328,8 @@ Intro Section
 #intro {
     background: url(../user/images/demo/intro.jpg) fixed no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 600px;
-    color: #fff;
+    background-position: relative;
+    height: auto;
     text-align: center;
 }
 
@@ -348,7 +347,7 @@ Intro Section
     top: 0;
 }
 
-#intro .form-wrap {
+.form-wrap {
     position: relative;
     width: 100%;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -356,7 +355,7 @@ Intro Section
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
-#intro .form-wrap .tab-menu {
+.form-wrap .tab-menu {
     padding: 0 !important;
     margin: 0 0 -10px 0 !important;
     width: 100%;
@@ -365,7 +364,7 @@ Intro Section
     position: relative;
 }
 
-#intro .form-wrap .tab-menu li {
+.form-wrap .tab-menu li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -375,7 +374,7 @@ Intro Section
     text-align: center;
 }
 
-#intro .form-wrap .tab-menu li a {
+.form-wrap .tab-menu li a {
     padding: 10px 20px 20px 20px;
     float: left;
     width: 100%;
@@ -384,26 +383,26 @@ Intro Section
     color: #1a1a1a;
 }
 
-#intro .form-wrap .tab-menu li a:hover {
+.form-wrap .tab-menu li a:hover {
     color: #1a1a1a;
 }
 
-#intro .form-wrap .tab-menu li.active a {
+.form-wrap .tab-menu li.active a {
     display: block;
     padding: 10px 20px 20px 20px;
     background: #fff;
     color: #f54c53;
 }
 
-#intro .form-wrap .tab-menu li.gtco-first a {
+.form-wrap .tab-menu li.gtco-first a {
     border-top-left-radius: 7px;
 }
 
-#intro .form-wrap .tab-menu li.gtco-second a {
+.form-wrap .tab-menu li.gtco-second a {
     border-top-right-radius: 7px;
 }
 
-#intro .form-wrap .tab-content {
+.form-wrap .tab-content {
     z-index: 10;
     position: relative;
     clear: both;
@@ -413,11 +412,11 @@ Intro Section
     border-bottom-right-radius: 7px;
 }
   
-#intro .form-wrap .tab-content .tab-content-inner {
+.form-wrap .tab-content .tab-content-inner {
     display: none;
 }
 
-#intro .form-wrap .tab-content .tab-content-inner.active {
+.form-wrap .tab-content .tab-content-inner.active {
     display: block;
 }
 
@@ -518,7 +517,7 @@ Demos Section
 }
 
 .demo::before {
-    content: url("../img/demo/dots.png");
+    content: url("../user/images/demo/dots.png");
     position: absolute;
     left: 0;
     top: 50%;
@@ -528,7 +527,7 @@ Demos Section
 }
 
 .demo.inverse::before {
-    content: url("../img/demo/dots-inverse.png");
+    content: url("../user/images/demo/dots-inverse.png");
     right: 0;
     left: initial;
 }
@@ -721,7 +720,7 @@ ul.memphis-parallax li {
 }
 
 #footer .bg {
-    background: url(../img/demo/intro.jpg) no-repeat;
+    background: url(../user/images/demo/intro.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 300px;
